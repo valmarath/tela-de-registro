@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+
+    <title>Test a product - Register</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="register.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="description">
+            <div class="img">
+                <img src="rocket.png" style="height: 20vh"/>
+            </div>
+            <div class="text">
+                <h1>Welcome</h1>
+                <h2>You are a few momentos away of starting the journey that will change your life!</h2>
+            </div>
+            <div class="login">
+                <div class="login_buttom">
+                    <input type="submit" name value="Login">
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="title">
+                <p>Make your registration<p>
+            </div>
+                <form>
+                    <div class="registration">
+                        <div class="left">
+                            <div class="regist_container">
+                                <div class="text_regist">Your name</div>
+                                <input type="text" name="usuario" placeholder="Ex: Jackson O'Connel" autofocus required />
+                            </div>
+                            <div class="regist_container">
+                                <div class="text_regist">Password</div>
+                                <input type="password" name="password" placeholder="At least 6 characters" required />
+                            </div>
+                            <div class="regist_container">
+                                <div class="text_regist">Confirm password</div>
+                                <input type="password" name="password_confirm" required />
+                            </div>
+                            <div class="regist_container">
+                                <div class="text_regist">E-mail</div>
+                                <input type="email" name="email" placeholder="jack321@gmail.com" required />
+                            </div>
+                            <div class="regist_container">
+                                <div class="text_regist">CPF</div>
+                                <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required/>
+                                <!--https://gist.github.com/marcoscastro/7887900ceebe9e223dce#file-index-html-->
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="regist_container">
+                                <div class="text_regist">Phone</div>
+                                <input type="tel" name="phone" placeholder="(xx) xxxxx-xxxx" />
+                            </div>
+                            <div class="regist_container">
+                                <div class="text_regist">Birth</div>
+                                <input type="date" name="birth" />
+                            </div>
+                            <div class="regist_container">
+                                <div class="text_regist">Education</div>
+                                <select>
+                                    <option>Select your Education Level</option>
+                                    <option value="bestseller">Middle School</option>
+                                    <option value="last">High School</option>
+                                    <option value="last">Bachelor's Degree</option>
+                                    <option value="last">Master's Degree</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="regist_container">
+                                <div class="text_regist">Occupation</div>
+                                <input type="text" name="occupation" placeholder="Ex: Engineer" required />
+                            </div>
+                            <div class="regist_container">
+                                <div class="text_regist">Sex</div>
+                                    <div class="sex_option">
+                                        <input type="radio" name="sexo" id="male"/>
+                                        <div class="sex_text">Male</div>
+                                        <input type="radio" name="sexo" id="female"/>
+                                        <div class="sex_text">Female</div>
+                                        <input type="radio" name="sexo" id="other"/>
+                                        <div class="sex_text">Other</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="register">
+                        <div class="register_buttom">
+                            <input type="submit" name value="Register" />
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

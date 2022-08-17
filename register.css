@@ -1,0 +1,201 @@
+* {
+box-sizing: border-box;
+font-family: 'Noto Sans JP', sans-serif;;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-25px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-25px); }
+}
+body {
+margin: 0px;
+padding: 0px;
+background: #761DF5;/*Quando não tem suporte*/
+background: linear-gradient(90deg, #DF0AB0, #761DF5);/*Padrão*/
+background-color: -moz-linear-gradient(#DF0AB0, #761DF5); /*Caso dê ruim no
+mozila*/
+background-color: -o-linear-gradient(#DF0AB0, #761DF5); /*Caso dê ruim no
+opera*/
+background-color: -webkit-linear-gradient(#DF0AB0, #761DF5); /*Caso dê ruim no
+safari*/
+}
+.container {
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+.description {
+    width: 25%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    color: #F8F9FA;
+    align-items: center;
+    position: relative; 
+}
+h2 {
+    font-weight: normal;
+}
+.description .img{
+    margin-top: 20%;
+    padding-top: 10%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.description .text{
+    text-align: center;
+    flex-wrap: wrap;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+input {
+    margin: 0%;
+    padding: 0%;
+}
+.description input{
+    background-color: #F8F9FA;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    color: #383D41;
+    width: 40%;
+    font-size: 20px;
+    cursor: pointer;
+    flex: 1;
+    position: absolute;
+    margin-top: 20%;
+    left: 0;
+    padding: 2%;
+    margin-left: 30%;
+}
+.form {
+    width: 75%;
+    height: 700px;
+    margin-right: 5%;
+    background-color: #F8F9FA;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.form .register input{
+    background-color: #CE0DBA;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    color: #F8F9FA;
+    width: 20%;
+    height: fit-content;
+    font-size: 20px;
+    cursor: pointer;
+    flex: 1;
+    position: absolute;
+    left: 0;
+    margin-left: 40%;
+    padding: 1%;
+    margin-top: 20px;
+}
+.form .title{
+    font-size: 27.5px;
+    font-weight: 600;
+    color: #495057;
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+}
+.registration {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    justify-content: space-around;
+}
+.text_regist{
+    margin-bottom: 7.5px;
+}
+select {
+    margin-bottom: 20px;
+}
+.registration input, select, button {
+    margin-bottom: 20px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #FFFFFF;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    width: 100%;
+}
+form{
+    width: 75%;
+    height: auto;
+}
+.sex_option {
+    display: flex;
+}
+.sex_option input {
+    height: 1.1rem;
+    padding: 0px;
+}
+.sex_text {
+    margin-right: 15px;
+}
+@media (max-width:750px) {
+    .container {
+        flex-direction: column;
+    }
+    .description {
+        width: 100%;
+        height: 650px;
+    }
+    .form {
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .registration {
+        flex-direction: column;
+        margin-top: 40%;
+    }
+    .form .register input{
+        background-color: #CE0DBA;
+        border: none;
+        border-radius: 1.5rem;
+        font-weight: 600;
+        color: #F8F9FA;
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        flex: 1;
+        position: relative;
+        margin-left: 0px;
+        padding: 1%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .register_buttom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text h2 {
+        margin-top: 50px;
+    }
+}
