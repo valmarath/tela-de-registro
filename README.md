@@ -6,6 +6,6 @@ Register Screen is a project made alongside my course in [B7Web](https://b7web.c
 
 ## See Register Screen in action
 
-- Download all files and open the [https://github.com/valmarath/tela-de-registro/blob/main/register.html) file on your browser. 
+- Download all files and open the [index.html]https://github.com/valmarath/tela-de-registro/blob/main/register.html) file on your browser. 
 
 - To test the responsive features, you can use the inspect option to change the dimensions as you please and see how it responds. 
